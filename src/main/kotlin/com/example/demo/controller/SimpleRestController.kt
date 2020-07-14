@@ -18,4 +18,11 @@ class SimpleRestController {
         println("end sleep service")
     }
 
+    @GetMapping("/asyncSleep")
+    fun asyncSleep() {
+        println("start asyncSleep service")
+        sleepService.asyncSleep()
+        println("end asyncSleep service")
+    }
+
 }
